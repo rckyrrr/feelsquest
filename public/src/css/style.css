@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap");
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+.form-control {
+    --bs-border-color: #1f71ff;
+    --bs-border-width: 2px;
+}
+
+.form-control:hover {
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(45deg, #1f71ff, #ed1e79) border-box;
+    border: 2px solid transparent;
+}
+
+.form-control:disabled:hover {
+    background: linear-gradient(#e9ecef, #e9ecef) padding-box,
+        linear-gradient(45deg, #1f71ff, #ed1e79) border-box;
+    border: 2px solid transparent;
+}
+
+.form-control:focus {
+    box-shadow: 0px 3px 3px 2px #1f71ff, 3px 0px 3px 2px #ed1e79;
+    border-color: white;
+}
+
+.form-control:active {
+    border-image: linear-gradient(white, white) padding-box,
+        linear-gradient(#ed1e79, #1f71ff) border-box;
+    border-image-slice: 1;
+    box-shadow: 1 1 1 2px linear-gradient(0deg, red, blue);
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #1f71ff, transparent) #1f71ff;
+    transition: background-color 0.5s, background 0.5s;
+}
+
+.btn-primary:hover {
+    background-color: #ed1e79;
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+    background: linear-gradient(45deg, #ed1e79, transparent) #ed1e79;
+    transition: background-color 0.5s, background 0.5s;
+    background-color: #1f71ff !important;
+}
+
+.btn-primary:focus {
+    background: linear-gradient(45deg, #1f71ff, transparent) #ed1e79;
+    transition: background 0.5s;
+    background-color: #ed1e79;
+}
+
+.bg-tranparan {
+    background-color: rgba(31, 113, 255, 0.1);
+}
+
+.bg-login {
+    background: linear-gradient(90deg, #7aabff, transparent);
+}
+
+.fw-cover {
+    font-weight: 900;
+}
+
+.text-second {
+    color: #ed1e79;
+}
+
+.profile-img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-position: center;
+}
+
+.profile-img-side {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-position: center;
+}
+
+.custom-file-input {
+    opacity: 0;
+}
+
+.pointer{
+    cursor: pointer;
+}
